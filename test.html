@@ -5,7 +5,77 @@
     <title>About Me</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/teststyle.css" rel="stylesheet" type="text/css" />
-
+<style>*{
+        box-sizing: border-box;
+    }
+    
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+     
+      #logo-front{
+        opacity: 0.8;
+        filter: alpha(opacity=50);
+      }
+      
+      /* Style the header and navigation*/
+      header {
+        background-color: rgb(183, 180, 178,0.5);
+        padding: 20px;
+        text-align: center;
+      }
+    
+      nav{
+        overflow: hidden;
+        background-color: #333;
+      }
+      a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+      }
+      
+      /* How to create columns */
+      article {
+        float: left;
+        height: 250px;
+        overflow: auto;
+        width: 33%;
+        border: 1px solid  rgb(183, 180, 178,0.5);
+        padding: 30px;
+      }
+    h1{
+      font-size:2.5em;
+        font-weight:30px;
+        padding: 20px;
+    }
+    
+      h2{
+        text-decoration: underline;
+        font-size:2em;
+        font-weight:30px;
+        padding: 20px;
+      }
+    
+      h3{
+        text-decoration: underline;
+        font-weight: 30px;
+        padding: 20px;
+      }
+      /* Clear floats after the columns */
+      .info:after {
+        /*content: "";*/
+        display: inline-block;
+        clear: both;
+      }
+      
+      p{
+        text-align: left;
+      }
+    </style>
 </head>
 
 <body>
@@ -22,7 +92,77 @@
     </nav>
 <section>
     <h1>Guessing Game</h1>
-    <script><link href="app.js"/></script>
+    <script>console.log('What do you know about Terra?');
+            var score = 0;
+            var userName;
+            // possibleAnswers=[yes, y, no, n]
+            
+            var userName = prompt('What is your name?');
+            console.log('What is the users name?');
+            console.log(userName);
+            /*Prompt for the first question, checks response and gives alert based on response.  
+            If player got answer correct, they get a point*/
+            
+            var firstAnswer = prompt(userName + ', do you think that Terra has been a teacher in only one school?');
+            firstAnswer.toLowerCase();
+            console.log(firstAnswer.toLowerCase());
+            if (firstAnswer === 'n'|| 'no') {
+               alert('Woohoo! You are correct. Terra has taught at three school in the past 18 years!')
+               score++;
+            } else {
+                alert('Sorry, ' + userName + 'that is not correct. Terra has taught at three schools in the past 18 years!')
+            };
+            console.log(score);
+            alert('So far, you have '+ score + ' points.')
+            
+            var secondAnswer = prompt(userName + ', do you think Terra was a collegiate athlete?');
+            secondAnswer.toLowerCase();
+            console.log(secondAnswer.toLowerCase());
+            if (secondAnswer === 'y' || 'yes') {
+                alert('Correct. Terra was on the ' + secondAnswer + ' team at UNI. Go Panthers!')
+                score++;
+            } else {
+                alert('Wa wa. Sorry, but Terra actually swam for UNI as well as rugby for UNI.')
+            };
+            console.log(score);
+            alert(userName + ' you have '+ score + ' points.')
+            
+            var thirdAnswer = prompt('Is Terra a mom?');
+            thirdAnswer.toLowerCase();
+            console.log(thirdAnswer.toLowerCase());
+            if (thirdAnswer ==='y' || 'yes') {
+                alert('You rock,' + userName + '. Terra is a mom of two boys.')
+                score++;
+            } else {
+                alert('Sorry,' + userName + ' no point for you.')
+            };
+            console.log(score);
+            alert( userName + ', you have '+ score + ' points.')
+            
+            var fourthAnswer = prompt('Does Terra bring a Mac to class?');
+            fourthAnswer.toLowerCase();
+            console.log(fourthAnswer.toLowerCase());
+            if (fourthAnswer === 'n' || 'no') {
+                alert( userName + ', you are on FIRE! Terra uses a pc.')
+                score++;
+            } else {
+                alert('Silly,' + username + 'Terra doesn\'t bring a Mac.')
+            };
+            console.log(score);
+            alert('You have '+ score + ' points. Last question!')
+            
+            var fifthAnswer = prompt('Does Terra drink coffee?');
+            fifthAnswer.toLowerCase();
+            console.log(fifthAnswer.toLowerCase());
+            
+            if (fifthAnswer === 'y' || 'yes') {
+                alert(username + ', you guessed right! Terra LOVES coffee!')
+                score++;
+            } else {
+                alert('What, who doesn\'t love coffee?')
+            };
+            console.log(score);
+            alert(userName + 'you earned'+ score + ' points.')</script>
     <h2> <script>document.write (userName); </script>, you earned <script>document.write (score);</script> points!</h2>
     <p>Take a look below to see what else you can learn about Terra!</p>
     

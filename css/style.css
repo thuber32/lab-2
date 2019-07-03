@@ -35,7 +35,7 @@
   /* Style for creating columns. Overflow creates scrolling options*/
   article {
     float: left;
-    height: 250px;
+    height: 400px;
     overflow: auto;
     width: 33%;
     border: 1px solid  rgb(183, 180, 178,0.5);
@@ -47,7 +47,7 @@
       font-weight:30px;
       padding: 20px;
   }
-  
+
   h2{
     text-decoration: underline;
     font-size:2em;
