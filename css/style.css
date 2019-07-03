@@ -1,0 +1,54 @@
+header{
+    border: 2px solid rgb(61, 140, 143);
+    padding: 20px;
+}
+#logo-back {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 800px;
+}
+
+#logo-front {
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    position:absolute;
+    top: 60px;
+    left: 550px;
+    z-index: 2;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5em;
+    border: 20px solid rgba(255, 255, 255, 0.5);
+    padding: 60px;
+}
+
+.stem-curric{
+    text-align:center;
+    color:rgb(61, 140, 143);
+}
+
+h2 {
+    font-weight: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+article {
+  background-color: rgb(183, 180, 178,0.5);
+  border: 2px solid rgb(61, 140, 143);
+  padding: 20px;
+  margin: 60px;
+  line-height: 2em;
+}
+
+
+
+
