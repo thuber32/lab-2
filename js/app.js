@@ -1,5 +1,6 @@
 "use strict";
 console.log('What do you know about Terra?');
+var welcome;
 var score = 0;
 //Prompt for the first question, checks response and gives alert
 

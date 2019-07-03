@@ -9,55 +9,123 @@
 </head>
 
 <body>
-    <!--This is my header for the portfolio: about me.  I want to insert an image and then overlap the text.  
+    <!--This is my header for the portfolio: about me.  Not sure how code for logos, images and overlays.
                 Below that I want a navigation bar for the different articles-->
     <header>
         <img src="img/th_logo_back.png" id="logo-back" />
         <img src="img/th-logo-front.png" id="logo-front" />
+        <ul class="nav">
+            <li><a href="#career">Career</a></li>
+            <li><a href="#family">Family</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+        </ul>
     </header>
+
     <!--This section is to provide information about me for the reader.  I want to have a side bar to show my education
-            information-->
+            information but I struggled with creating columns so I reverted back to basic format since I wasn't sure how
+        to adjust for various screens-->
     <section>
-        <article>
+        <article id="career">
             <h2>Career</h2>
             <p>Life long learning is not only a passion of mine but something that I try to instill with my students.
                 I am currently a STEM teacher at Mid-Prairie Middle School where I have the privilege of teaching
                 every student.
 
             </p>
+            <!--not sure why my css code isn't centering this text?-->
             <div class="stem-curric"></div>
-            <ul>Here is the breakdown of what I teach:</ul>
-            <li><strong>5th Grade: Engineering Principles</strong></li>
-            <li>6th Grade: Computer Science Discoveries</li>
-            <li>7th Grade: Design & Modeling</li>
-            <li>8th Grade: Automation & Robotics</li>
+            <ul>Here is the breakdown of what I teach:
+                <li><strong>5th Grade: Engineering Principles</strong></li>
+                <li><strong>6th Grade: Computer Science Discoveries</strong></li>
+                <li><strong>7th Grade: Design & Modeling</strong></li>
+                <li><strong>8th Grade: Automation & Robotics</strong></li>
+            </ul>
             </div>
             <p>Sounds interesting, right. My day at school maybe hectic but it is certainly never boring and
                 the kids always keep me on my toes!
 
             </p>
+            <p><a href="#logo-front">Back to the Top</a></p>
         </article>
-        <article>
+        <article id="family">
             <h2>Family</h2>
-            <img src="img/family.jpg" alt="This is a picture of my family" width="200px" />
-            <p>Family is extremely important to me. I have been married to my best friend, Jeff Huber
-                for 14 years. We have two very energetic boys that keep us on our toes. The oldest, Tyson,
-                is 9 years old. My youngest, Kaden, is 7. We also have three fur babies. Max and Shadow,
-                our cats, love to torment our Golden Retriever.
+            <p><img src="img/family.jpg" alt="This is a picture of my family" width="200" id="family" />
+                I have been married to my best friend, Jeff Huber for 14 years. He is a mechanical engineer for Bazooka
+                and shares my love for tinkering and building. We have two very energetic boys that keep us on our toes.
             </p>
+            <br>
+            <!--not sure why my css code isn't centering this text?-->
+            <ul><em>Kids:</em>
+                <li><strong>Tyson</strong></li>
+                <li><strong>Kaden</strong></li>
+            </ul>
+            <p>We also have three fur babies. Max and Shadow, our cats, love to torment our Golden Retriever, Curly.</p>
+            <p><a href="#logo-front">Back to the Top</a></p>
         </article>
-        <article>
+        <article id="hobbies">
             <h2>Hobbies</h2>
             <p>When I am not running after my kids or teaching, I can often be found either at the pool or outside.
                 I am one of our local YMCA swim coaches, where I am able to share my passion of swimming with others.
                 In addition to coaching, I love to run, hike, scuba dive and work in the garden .
             </p>
+            <p><a href="#logo-front">Back to the Top</a></p>
+        </article>-->
+        <article id="education">
+            <h2>Education</h2>
+            <p>School has been my life. Not just because I am a teacher and I spend so much of my time working with
+                students in
+                a school but because I have spent so much of my life learning. Below is a bit about my educational
+                background.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>University</th>
+                        <th>Degree</th>
+                        <th>Program</th>
+                        <th>Years in Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Drake University</td>
+                        <td>Masters</td>
+                        <td>Administration</td>
+                        <td>2007-2009</td>
+                    </tr>
+                    <tr>
+                        <td>Illinois State University</td>
+                        <td>Masters</td>
+                        <td>Curriculum & Instruction</td>
+                        <td>2005-2006</td>
+                    </tr>
+                    <tr>
+                        <td>University of Northern Iowa</td>
+                        <td>Bachelors</td>
+                        <td>Biology & Chemistry Education 6-12</td>
+                        <td>1996-2001</td>
+                    </tr>
+                </tbody>
+                <p><a href="#logo-front">Back to the Top</a></p>
         </article>
-        <!--I want to include a side bar to show my education.  This area will include basic information such as 
-        the university, date and level of education.-->
+
+        <article id="fun-facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Swam for UNI Swim Team</li>
+                <li>Played rugby for UNI</li>
+                <li>Lived in Australia for 4 months</li>
+                <li>Backpacked south island of New Zealand</li>
+                <li>Traveled to every United States but Alaska</li>
+                <li>Favorite foods are pickles and blackberries, but not together</li>
+                <li>Used to compete in triathlons & marathon races</li>
+            </ul>
+        </article>
 
         <script>
-            <link href="app.js" />
+            <link href="app.js"/>
         </script>
         </div>
 </body>
