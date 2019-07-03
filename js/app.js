@@ -13,20 +13,20 @@ If player got answer correct, they get a point*/
 var firstAnswer = prompt(userName + ', do you think that Terra has been a teacher in only one school?');
 firstAnswer.toLowerCase();
 console.log(firstAnswer.toLowerCase());
-if (firstAnswer === 'n'|| 'no') {
+if (firstAnswer === 'n'||'no') {
    alert('Woohoo! You are correct. Terra has taught at three school in the past 18 years!')
    score++;
 } else {
     alert('Sorry, ' + userName + 'that is not correct. Terra has taught at three schools in the past 18 years!')
 };
 console.log(score);
-alert('So far, you have '+ score + ' points.')
+alert('So far, you have '+ score + ' point.')
 
 var secondAnswer = prompt(userName + ', do you think Terra was a collegiate athlete?');
 secondAnswer.toLowerCase();
 console.log(secondAnswer.toLowerCase());
-if (secondAnswer === 'y' || 'yes') {
-    alert('Correct. Terra was on the ' + secondAnswer + ' team at UNI. Go Panthers!')
+if (secondAnswer === 'y'||'yes') {
+    alert(username + ', you are correct! Terra swam for UNI and played rugby. Go Panthers!')
     score++;
 } else {
     alert('Wa wa. Sorry, but Terra actually swam for UNI as well as rugby for UNI.')
@@ -37,7 +37,7 @@ alert(userName + ' you have '+ score + ' points.')
 var thirdAnswer = prompt('Is Terra a mom?');
 thirdAnswer.toLowerCase();
 console.log(thirdAnswer.toLowerCase());
-if (thirdAnswer ==='y' || 'yes') {
+if (thirdAnswer ==='y'||'yes') {
     alert('You rock,' + userName + '. Terra is a mom of two boys.')
     score++;
 } else {
