@@ -30,6 +30,7 @@
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    line-height:1.5em;
   }
   
   /* Style for creating columns. Overflow creates scrolling options*/
@@ -40,12 +41,13 @@
     width: 33%;
     border: 1px solid  rgb(183, 180, 178,0.5);
     padding: 30px;
+    text-align:left;
   }
 
   h1{
     font-size:2.5em;
-      font-weight:30px;
-      padding: 20px;
+    font-weight:30px;
+    padding: 20px;
   }
 
   h2{
@@ -67,6 +69,34 @@
     clear: both;
   }
   
+  .game{
+    margin-top: 40px;
+    padding: 40px;
+   }
+
+  ul{
+    margin-left: 5%;
+    list-style: outside circle;
+    width: 250px;
+  }
+
+  li{
+    margin-top: 10px 0px 0px 20px;
+
+  }
+
+  .top-ten{
+    margin: 40px 200px;
+    padding: 20px;
+  }
+
+  ol{
+    text-align: left;
+    margin-left: 20%;
+    list-style-type: decimal;
+
+  }
+
   p{
     text-align: left;
   }

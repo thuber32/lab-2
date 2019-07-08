@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;}
+
+/*background of the page*/
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: rgb(35, 77, 87);
+    color: white;}
+  
+  /* Style for the header and navigation*/
+  header {
+    padding: 20px;
+    text-align: center;}
+
+  nav{
+    overflow: hidden;
+    background-color: rgb(87,64,35);}
+
+  a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    line-height:1.5em;}
+  
+  h1{
+    font-size:2.5em;
+    font-weight:30px;
+    padding: 20px;}
+
+.results{
+    border: rgb(87,64,35);
+    border: 50px;
+    padding: 40px;
+    background-color: rgb(87,38,35);
+    border-radius: 25px;
+    margin: auto;
+    height: 350px;
+    width: 600px;
+    text-align: center;}
+
+h3{
+    color: white;
+    padding: 40 px;
+    line-height: 1.5em;
+    text-align: center;
+    display: block;
+
+}

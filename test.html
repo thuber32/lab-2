@@ -2,210 +2,235 @@
 <html>
 
 <head>
-    <title>About Me</title>
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/teststyle.css" rel="stylesheet" type="text/css" />
-<style>*{
-        box-sizing: border-box;
+  <title>About Me</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/teststyle.css" rel="stylesheet" type="text/css" />
+  <style>
+    * {
+      box-sizing: border-box;
     }
-    
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-      }
-     
-      #logo-front{
-        opacity: 0.8;
-        filter: alpha(opacity=50);
-      }
-      
-      /* Style the header and navigation*/
-      header {
-        background-color: rgb(183, 180, 178,0.5);
-        padding: 20px;
-        text-align: center;
-      }
-    
-      nav{
-        overflow: hidden;
-        background-color: #333;
-      }
-      a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-      }
-      
-      /* How to create columns */
-      article {
-        float: left;
-        height: 250px;
-        overflow: auto;
-        width: 33%;
-        border: 1px solid  rgb(183, 180, 178,0.5);
-        padding: 30px;
-      }
-    h1{
-      font-size:2.5em;
-        font-weight:30px;
-        padding: 20px;
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
     }
-    
-      h2{
-        text-decoration: underline;
-        font-size:2em;
-        font-weight:30px;
-        padding: 20px;
-      }
-    
-      h3{
-        text-decoration: underline;
-        font-weight: 30px;
-        padding: 20px;
-      }
-      /* Clear floats after the columns */
-      .info:after {
-        /*content: "";*/
-        display: inline-block;
-        clear: both;
-      }
-      
-      p{
-        text-align: left;
-      }
-    </style>
+
+    #logo-front {
+      opacity: 0.8;
+      filter: alpha(opacity=50);
+    }
+
+    /* Style the header and navigation*/
+    header {
+      background-color: rgb(183, 180, 178, 0.5);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+    }
+
+    /* How to create columns */
+    article {
+      float: left;
+      height: 250px;
+      overflow: auto;
+      width: 33%;
+      border: 1px solid rgb(183, 180, 178, 0.5);
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 30px;
+      padding: 20px;
+    }
+
+    h2 {
+      text-decoration: underline;
+      font-size: 2em;
+      font-weight: 30px;
+      padding: 20px;
+    }
+
+    h3 {
+      text-decoration: underline;
+      font-weight: 30px;
+      padding: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .info:after {
+      /*content: "";*/
+      display: inline-block;
+      clear: both;
+    }
+
+    p {
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-            <img src="img/th_logo_back.png" width="800" id="logo-back" />
-            <img src="img/th-logo-front.png" width="400" id="logo-front" />
+  <header>
+    <img src="img/th_logo_back.png" width="800" id="logo-back" />
+    <img src="img/th-logo-front.png" width="400" id="logo-front" />
     <header>
 
-    <nav>
+      <nav>
         <a href="#career">Career</a>
         <a href="#education">Education</a>
         <a href="fun-facts">Fun Facts</a>
         <a href="game">Game</a>
-    </nav>
-<section>
-    <h1>Guessing Game</h1>
-    <script>console.log('What do you know about Terra?');
-            var score = 0;
-            var userName;
-            // possibleAnswers=[yes, y, no, n]
-            
-            var userName = prompt('What is your name?');
-            console.log('What is the users name?');
-            console.log(userName);
-            /*Prompt for the first question, checks response and gives alert based on response.  
-            If player got answer correct, they get a point*/
-            
-            var firstAnswer = prompt(userName + ', do you think that Terra has been a teacher in only one school?');
-            firstAnswer.toLowerCase();
-            console.log(firstAnswer.toLowerCase());
-            if (firstAnswer === 'n'|| 'no') {
-               alert('Woohoo! You are correct. Terra has taught at three school in the past 18 years!')
-               score++;
-            } else {
-                alert('Sorry, ' + userName + 'that is not correct. Terra has taught at three schools in the past 18 years!')
-            };
-            console.log(score);
-            alert('So far, you have '+ score + ' points.')
-            
-            var secondAnswer = prompt(userName + ', do you think Terra was a collegiate athlete?');
-            secondAnswer.toLowerCase();
-            console.log(secondAnswer.toLowerCase());
-            if (secondAnswer === 'y' || 'yes') {
-                alert('Correct. Terra was on the ' + secondAnswer + ' team at UNI. Go Panthers!')
-                score++;
-            } else {
-                alert('Wa wa. Sorry, but Terra actually swam for UNI as well as rugby for UNI.')
-            };
-            console.log(score);
-            alert(userName + ' you have '+ score + ' points.')
-            
-            var thirdAnswer = prompt('Is Terra a mom?');
-            thirdAnswer.toLowerCase();
-            console.log(thirdAnswer.toLowerCase());
-            if (thirdAnswer ==='y' || 'yes') {
-                alert('You rock,' + userName + '. Terra is a mom of two boys.')
-                score++;
-            } else {
-                alert('Sorry,' + userName + ' no point for you.')
-            };
-            console.log(score);
-            alert( userName + ', you have '+ score + ' points.')
-            
-            var fourthAnswer = prompt('Does Terra bring a Mac to class?');
-            fourthAnswer.toLowerCase();
-            console.log(fourthAnswer.toLowerCase());
-            if (fourthAnswer === 'n' || 'no') {
-                alert( userName + ', you are on FIRE! Terra uses a pc.')
-                score++;
-            } else {
-                alert('Silly,' + username + 'Terra doesn\'t bring a Mac.')
-            };
-            console.log(score);
-            alert('You have '+ score + ' points. Last question!')
-            
-            var fifthAnswer = prompt('Does Terra drink coffee?');
-            fifthAnswer.toLowerCase();
-            console.log(fifthAnswer.toLowerCase());
-            
-            if (fifthAnswer === 'y' || 'yes') {
-                alert(username + ', you guessed right! Terra LOVES coffee!')
-                score++;
-            } else {
-                alert('What, who doesn\'t love coffee?')
-            };
-            console.log(score);
-            alert(userName + 'you earned'+ score + ' points.')</script>
-    <h2> <script>document.write (userName); </script>, you earned <script>document.write (score);</script> points!</h2>
-    <p>Take a look below to see what else you can learn about Terra!</p>
-    
-</section>
-    <section class="info">
+      </nav>
+      <section>
+        <h1>Guessing Game</h1>
+       <script>console.log('What do you know about Terra?');
+          var score = 0;
+          var userName;
+          // possibleAnswers=[yes, y, no, n]
+
+          var userName = prompt('What is your name?');
+          console.log('What is the users name?');
+          console.log(userName);
+          /*Prompt for the first question, checks response and gives alert based on response.  
+          If player got answer correct, they get a point*/
+
+          var firstAnswer = prompt(userName + ', do you think that Terra has been a teacher in only one school?');
+          firstAnswer.toLowerCase();
+          console.log(firstAnswer.toLowerCase());
+
+
+          //made change... added array of possible answers.
+          var possibleAnswers = ['y', 'yes', 'n', 'no']
+
+          //check to see if userName answer matches answers in array
+          if (firstAnswer === possibleAnswers[2,3]) {
+            alert('Woohoo! You are correct. Terra has taught at three school in the past 18 years!')
+            score++;
+          } else {
+            alert('Sorry, ' + userName + ' that is not correct. Terra has taught at three schools in the past 18 years!')
+          };
+          //check to see that they answer doesn't include extra spaces
+          //console.log()-- check to see that answer is correct
+          console.log(score);
+          alert('So far, you have ' + score + ' points.')
+
+//user being asked the second question
+          var secondAnswer = prompt(userName + ', do you think Terra was a collegiate athlete?');
+          secondAnswer.toLowerCase();
+          console.log(secondAnswer.toLowerCase());
+
+          //checking to see if the second answer matches the answers in the array
+          if (secondAnswer === possibleAnswers[0,1]) {
+            alert('Correct. Terra was on the swim team at UNI as well as she played rugby. Go Panthers!')
+            score++;
+          } else {
+            alert('Wa wa. Sorry,' + userName + ' but Terra actually swam for UNI as well as rugby for UNI.')
+          };
+          console.log(score);
+          alert(userName + ' you have ' + score + ' points.')
+
+          //checking to see if the third answer matches the answers in the array
+          var thirdAnswer = prompt('Is Terra a mom?');
+          thirdAnswer.toLowerCase();
+          console.log(thirdAnswer.toLowerCase());
+          if (thirdAnswer === possibleAnswers [0,1]) {
+            alert('You rock,' + userName + '. Terra is a mom of two boys.')
+            score++;
+          } else {
+            alert('Sorry,' + userName + ' no point for you. Terra has two boys')
+          };
+          console.log(score);
+          alert(userName + ', you have ' + score + ' points.')
+
+//checking to see if the fourth answer matches the answers in the array
+          var fourthAnswer = prompt('Does Terra bring a Mac to class?');
+          fourthAnswer.toLowerCase();
+          console.log(fourthAnswer.toLowerCase());
+          if (fourthAnswer === possibleAnswers[2,3]) {
+            alert(userName + ', you are on FIRE! Terra uses a pc.')
+            score++;
+          } else {
+            alert('Silly,' + username + 'Terra doesn\'t bring a Mac.')
+          };
+          console.log(score);
+          alert('You have ' + score + ' points. Last question!')
+
+//checking to see if the fifth answer matches the answers in the array
+          var fifthAnswer = prompt('Does Terra drink coffee?');
+          fifthAnswer.toLowerCase();
+          console.log(fifthAnswer.toLowerCase());
+          if (fifthAnswer === possibleAnswers[0,1]) {
+            alert(username + ', you guessed right! Terra LOVES coffee!')
+            score++;
+          } else {
+            alert('What, who doesn\'t love coffee?')
+          };
+          console.log(score);
+          alert(userName + 'you earned' + score + ' points.')
+</script>
+
+          <!--Recording the results of the game onto the site-->
+        <h2>
+          <script>document.write(userName); </script>, you earned
+          <script>document.write(score);</script> points!</h2>
+        <p>Take a look below to see what else you can learn about Terra!</p>
+
+      </section>
+      <section class="info">
         <article>
-            <h2 id="career">Career</h2>
-            <p>I am a learner, problem solver, collaborator, encourager, leader, listener, counselor, 
-                engineer of learning, developer, facilitator. If you ask me what is a teacher, I would 
-                answer all of these things.  This is my job.  This is what I do. I have taught in three Schools during my 
-            career.  </p>
-            <ul><h3>Schools:</h3>
-                <li>Mid-Prairie Middle School</li>
-                <li>Washington Junior High School</li>
-                <li>Fulton High School</li>
-            </ul>
+          <h2 id="career">Career</h2>
+          <p>I am a learner, problem solver, collaborator, encourager, leader, listener, counselor,
+            engineer of learning, developer, facilitator. If you ask me what is a teacher, I would
+            answer all of these things. This is my job. This is what I do. I have taught in three Schools during my
+            career. </p>
+          <ul>
+            <h3>Schools:</h3>
+            <li>Mid-Prairie Middle School</li>
+            <li>Washington Junior High School</li>
+            <li>Fulton High School</li>
+          </ul>
         </article>
 
         <article>
-            <h2 id="education">Education</h2>
-            <p></p>
-            <ul><h3>Universities</h3>
-                <li>Drake University: MS in Administration</li>
-                <li>Illinois State University: MS in Curriculum & Instruction</li>
-                <li>University of Northern Iowa (UNI): Bachelors in Biology & Chemistry Education 6-12</li>
-            </ul>
-            <ul><h3>Additional Training</h3>
-                <li>Iowa State University: PLTW Training Courses</li>
-                <li>UNI with Collaboration from NewBo Co: Computer Science Discoveries Training</li>
-            </ul>
+          <h2 id="education">Education</h2>
+          <p></p>
+          <ul>
+            <h3>Universities</h3>
+            <li>Drake University: MS in Administration</li>
+            <li>Illinois State University: MS in Curriculum & Instruction</li>
+            <li>University of Northern Iowa (UNI): Bachelors in Biology & Chemistry Education 6-12</li>
+          </ul>
+          <ul>
+            <h3>Additional Training</h3>
+            <li>Iowa State University: PLTW Training Courses</li>
+            <li>UNI with Collaboration from NewBo Co: Computer Science Discoveries Training</li>
+          </ul>
         </article>
 
         <article>
-            <h2 id="fun-facts">Fun Facts</h2>
-            <p></p>
-            <ul>
-                <li>Swam for UNI swim team and UNI rugby team </li>
-                <li>Live in Australia for 4 months</li>
-                <li>Backpacked south island of New Zealand for a month</li>
-                <li>Favorite foods are blackberries and pickles, but not together!</li>
-            </ul>
-            </article>
-            
+          <h2 id="fun-facts">Fun Facts</h2>
+          <p></p>
+          <ul>
+            <li>Swam for UNI swim team and UNI rugby team </li>
+            <li>Live in Australia for 4 months</li>
+            <li>Backpacked south island of New Zealand for a month</li>
+            <li>Favorite foods are blackberries and pickles, but not together!</li>
+          </ul>
+        </article>
+
 </body>
 
 </html>
