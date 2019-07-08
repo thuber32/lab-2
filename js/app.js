@@ -101,20 +101,22 @@ alert(userName + ' you currently have ' + score + ' points.');
 //Asking sixth question.  Answer is an integer and must give four tries
 
 //checking to see if the sixth answer matches the answer 
-   var answerSix = prompt('How many degrees from college has Terra earned?');
-   for (var i = 0; i < 4; i++) {
+var answerSix = prompt('How many degrees from college has Terra earned?');
+var i = 0;
+while (i < 4) {
     if (answerSix === 3) {
         console.log('Number of degrees earned? Expect 3');
         console.log(answerSix);
-        i = 5;
         alert(userName + ', you guessed right.  Terra has three degrees. Read more about it on her About Me page.');
         score++;
-    }else{
+        i = 5;
+    } else {
         answerSix = prompt('Try again');
         console.log('Number of degrees earned? Expect 3');
         console.log(answerSix);
-        }
-   };  
+        i++
+    }
+};
 console.log('Points earned?');
 console.log(score);
 alert(userName + ' you currently have ' + score + 'points.');
@@ -123,18 +125,18 @@ alert(userName + ' you currently have ' + score + 'points.');
 answer = prompt('What are Terra\'s favorite fruits?');
 var questionSeven = ['blackberries', 'blueberries', 'raspberries', 'strawberries']
 
-for(var i = 0; i <= 6; i++ ) {
-   if (answer.toLowerCase() === questionSeven[0,1]){
-       console.log('Favorite foods? expect blackberries, blueberries, raspberries or strawberries');
-       console.log(answer);
-       alert('Great job ' + userName + ', you guessed right. Terra loves ' + answer);
-       score++;
-       i = 7;
-}else{
-    console.log('Favorite foods? expect blackberries, blueberries, raspberries or strawberries');
-    console.log(answer);
-    prompt('Try again');
-};
+for (var i = 0; i <= 6; i++) {
+    if (answer.toLowerCase() === questionSeven[0, 1]) {
+        console.log('Favorite foods? expect blackberries, blueberries, raspberries or strawberries');
+        console.log(answer);
+        alert('Great job ' + userName + ', you guessed right. Terra loves ' + answer);
+        score++;
+        i = 7;
+    } else {
+        console.log('Favorite foods? expect blackberries, blueberries, raspberries or strawberries');
+        console.log(answer);
+        prompt('Try again');
+    };
 };
 console.log('Points earned?');
 console.log(score);

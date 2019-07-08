@@ -5,6 +5,7 @@
   body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    background-color: rgb(183, 180, 178,0.5);
   }
   
   /* Style for the header and navigation*/
@@ -55,6 +56,7 @@
     font-size:2em;
     font-weight:30px;
     padding: 20px;
+    text-align: center;
   }
 
   h3{
@@ -70,31 +72,35 @@
   }
   
   .game{
-    margin-top: 40px;
+    margin: 40px 200px 0px 200px;
     padding: 40px;
+    text-align: center;
    }
 
   ul{
     margin-left: 5%;
     list-style: outside circle;
-    width: 250px;
+    width: 300;
   }
 
-  li{
-    margin-top: 10px 0px 0px 20px;
-
+  ul li{
+    margin: 20px;
   }
 
   .top-ten{
     margin: 40px 200px;
     padding: 20px;
+    text-align: center
   }
 
   ol{
     text-align: left;
-    margin-left: 20%;
-    list-style-type: decimal;
+    margin: auto;
+  }
 
+  ol li {
+    margin-left: 33%;
+    list-style: decimal;
   }
 
   p{
