@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice Functions</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <script>
+var userName = 'Santa Clause'; //default
+var correctAnswers = 0;//default
+var questionNumber = 0; //default
+
+function askQuestion(questionText, correctWord, correctMsg, IncorrectMsg){
+    questionNumber++;
+    var correctLetter = correctWord[0]; //new variable to hold the correctWord string remember strings have array properties
+    var answer = prompt(questionText).toLowerCase(); //new variable that usings the first param and cleans the return value
+    if (answer === correctWord || answer === correctLetter){
+        console.log('That\'s right,' + userName + '!' + correctMsg)
+        correctAnswers++; 
+    } else {
+        console.log(incorrectMsg + 'Were you listening,' + userName + '?');
+    }
+}
+
+//Q1 test
+var questionText = 'Is Keith a swing dancer?'
+var correctWord = 'yes';
+var correctMsg = 'Keith\'s been doin Lindy Hop and other jazz dances since his college days.';
+var incorrectMsg = 'Wrong'
+
+var question1 = askQuestion ('Is it lunch time', 'yes', 'Yum', 'Seriously, go eat')
+    </script>
+</body>
+
+</html>
