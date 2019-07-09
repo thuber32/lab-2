@@ -19,8 +19,8 @@ var possibleAnswers = ['y', 'yes', 'n', 'no']
 //check to see if userName answer matches answers in array
 if (cleanAnswer === possibleAnswers[2, 3]) {
     alert('Woohoo! You are correct. Terra has taught at three school in the past 18 years!');
-    score++;//earned one point
-    correct++;//answered the question correctly 
+    score++; //earned one point
+    correct++; //answered the question correctly 
 } else {
     alert('Sorry, ' + userName + ' that is not correct. Terra has taught at three schools in the past 18 years!');
 };
@@ -40,8 +40,8 @@ cleanAnswer = answer.toLowerCase(); // making user's answer lower case
 //checking to see if the second answer matches the answers in the array
 if (cleanAnswer === possibleAnswers[0, 1]) {
     alert('Correct. Terra was on the swim team at UNI as well as she played rugby. Go Panthers!');
-    score++;//earned one point
-    correct++;//answered the question correctly 
+    score++; //earned one point
+    correct++; //answered the question correctly 
 } else {
     alert('Wa wa. Sorry,' + userName + ' but Terra actually swam for UNI as well as rugby for UNI.');
 };
@@ -60,8 +60,8 @@ cleanAnswer = answer.toLowerCase(); // making user's answer lower case
 //checking to see if userName answers match correct choice
 if (cleanAnswer === possibleAnswers[0, 1]) {
     alert('You rock,' + userName + '. Terra is a mom of two boys.');
-    score++;//earned one point
-    correct++;//answered the question correctly 
+    score++; //earned one point
+    correct++; //answered the question correctly 
 } else {
     alert('Sorry,' + userName + ' no point for you. Terra has two boys');
 };
@@ -80,8 +80,8 @@ cleanAnswer = answer.toLowerCase(); // making user's answer lower case
 //checking to see if user answer match correct choice
 if (cleanAnswer === possibleAnswers[2, 3]) {
     alert(userName + ', you are on FIRE! Terra uses a pc.');
-    score++;//earned one point
-    correct++;//answered the question correctly 
+    score++; //earned one point
+    correct++; //answered the question correctly 
 } else {
     alert('Silly,' + userName + ' Terra doesn\'t bring a Mac.');
 };
@@ -139,25 +139,33 @@ while (attempts < 4) {
     alert(userName + ' you currently have ' + score + ' points.');
 
 
-// //Asking seventh question.  Multiple possible answers
-answer = prompt('What are Terra\'s favorite fruits?');
-var possibleFruits = ['blackberries', 'blu,eberries', 'raspberries', 'strawberries']
-cleanAnswer = answer.toLowerCase();
-cleanerAnswer = possibleFruits.includes(cleanAnswer);
-for (var i = 0; i <= 6; i++) {
- if (cleanerAnswer === 1) {
-    alert('Way to go')
- } else {}
-    prompt('Try again')
- }
-    
- }
-//     } else {
-//         console.log('Favorite foods? expect blackberries, blueberries, raspberries or strawberries');
-//         console.log(answer);
-//         prompt('Try again');
-//     };
-// };
-// console.log('Points earned?');
-// console.log(score);
-// alert(userName + ' you earned ' + score + 'points.');
+
+    //Asking seventh question.  Multiple possible answers
+    answer = prompt('What are Terra\'s favorite fruits?');
+    var possibleFruits = ['blackberries', 'blueberries', 'raspberries', 'strawberries'];
+    cleanAnswer = answer.toLowerCase();
+    var cleanerAnswer = possibleFruits.includes(cleanAnswer);
+    console.log(cleanAnswer);
+    console.log(cleanerAnswer);
+    for (var i = 0; i <= 6; i++) {
+        if (cleanerAnswer === true) {
+            alert('Way to go. Terra likes blackberries, blueberries, raspberries and strawberries.');
+            break;
+        } else {
+            answer = prompt('Try again');
+            cleanAnswer = answer.toLowerCase();
+            cleanerAnswer = possibleFruits.includes(cleanAnswer);
+            console.log(cleanAnswer);
+            console.log(cleanerAnswer);
+        }
+    }
+    console.log('Terra favorite fruit? Expect blackberries, blueberries, raspberries, strawberries');
+    console.log(cleanAnswer);
+    console.log('Points earned thus far?');
+    console.log(score);
+    console.log('Total questions correct?')
+    console.log(correct);
+    alert(userName + ', you finished the game with ' + score + ' points. You got ' + correct + ' questions correct.');
+}
+
+gameStart();
