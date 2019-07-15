@@ -1,0 +1,131 @@
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  /* Style for the header and navigation*/
+  header {
+    background-color: rgb(183, 180, 178, 0.5);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 300px;
+  }
+  
+  #logo-front {
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+  
+  }
+  
+  nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    line-height: 1.5em;
+  }
+  
+  .content {
+    margin: 40px 200px;
+    padding: 20px; 
+  }
+  
+  .info {
+    margin: 40px 200px;
+    padding: 20px; 
+    text-align:center;
+    float: left;
+  }
+   
+  #profile {
+      float: left;
+  }
+
+  /* Style for creating columns. Overflow creates scrolling options*/
+  article {
+    overflow: auto;
+    height: hv;
+    overflow: auto;
+    background-color:rgb(183, 180, 178);
+    box-shadow: 0 px 1px 3px 0px rgb(183, 180, 178, 0.5);
+    padding: 30px;
+    text-align: left;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+   
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    font-weight: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    text-decoration: underline;
+    font-size: 2em;
+    font-weight: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    text-decoration: underline;
+    font-weight: 30px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .info:after {
+    /*content: "";*/
+    display: inline-block;
+    clear: both;
+  }
+  
+  .fun-games {
+    margin: 40px 200px 0px 200px;
+    padding: 20px;
+    text-align: center;
+    float: left;
+  }
+  
+  ul {
+    margin-left: 5%;
+    list-style: outside circle;
+    width: 300;
+  }
+  
+  ul li {
+    margin: 20px;
+  }
+  
+  .top-ten {
+    margin: 40px 200px;
+    padding: 20px;
+    text-align: center;
+    float:left;
+  }
+  
+  ol {
+    text-align: left;
+    margin: auto;
+  }
+  
+  ol li {
+    margin-left: 33%;
+    list-style: decimal;
+  }
+  
+  p {
+    text-align: left;
+  }
